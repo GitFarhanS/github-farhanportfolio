@@ -90,7 +90,7 @@ export const HeroSection = () => {
         </ScrollLink>
         <ScrollLink sectionId="contact" as="button" className="inline-flex items-center gap-2 bg-white text-gray-900 border-white h-12 px-6 rounded-xl">
         <span role="img" aria-label="Hands raised">🙌</span>
-        <span className="font-semibold">Let"s connect</span>
+        <span className="font-semibold">Let&apos;s connect</span>
         </ScrollLink>
         </div>
       </div>
