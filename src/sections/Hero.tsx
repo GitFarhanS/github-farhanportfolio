@@ -1,18 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import meHero from '@/assets/images/meHero3.png';
-import ArrowDown from '@/assets/icons/arrow-down.svg';
+import meHero from "@/assets/images/meHero3.png";
+import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
-import { HeroOrbit } from '@/components/HeroOrbit';
-import EarthIcon from '@/assets/icons/planets/earth.svg';
-import MercuryIcon from '@/assets/icons/planets/mercury.svg';
-import VenusIcon from '@/assets/icons/planets/venus.svg';
-import MarsIcon from '@/assets/icons/planets/mars.svg';
-import JupiterIcon from '@/assets/icons/planets/jupiter.svg';
-import SaturnIcon from '@/assets/icons/planets/saturn.svg';
-import UranusIcon from '@/assets/icons/planets/uranus.svg';
-import NeptuneIcon from '@/assets/icons/planets/neptune.svg';
+import { HeroOrbit } from "@/components/HeroOrbit";
+import EarthIcon from "@/assets/icons/planets/earth.svg";
+import MercuryIcon from "@/assets/icons/planets/mercury.svg";
+import VenusIcon from "@/assets/icons/planets/venus.svg";
+import MarsIcon from "@/assets/icons/planets/mars.svg";
+import JupiterIcon from "@/assets/icons/planets/jupiter.svg";
+import SaturnIcon from "@/assets/icons/planets/saturn.svg";
+import UranusIcon from "@/assets/icons/planets/uranus.svg";
+import NeptuneIcon from "@/assets/icons/planets/neptune.svg";
 import ScrollLink from "@/components/smoothScroll";
 
 export const HeroSection = () => {
@@ -90,7 +90,7 @@ export const HeroSection = () => {
         </ScrollLink>
         <ScrollLink sectionId="contact" as="button" className="inline-flex items-center gap-2 bg-white text-gray-900 border-white h-12 px-6 rounded-xl">
         <span role="img" aria-label="Hands raised">🙌</span>
-        <span className="font-semibold">Let's connect</span>
+        <span className="font-semibold">Let"s connect</span>
         </ScrollLink>
         </div>
       </div>

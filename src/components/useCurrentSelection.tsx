@@ -1,16 +1,16 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useCurrentSection = () => {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setCurrentSection(entry.target.getAttribute('id'));
+            setCurrentSection(entry.target.getAttribute("id"));
           }
         });
       },

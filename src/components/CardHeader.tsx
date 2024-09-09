@@ -1,5 +1,5 @@
-import StarIcon from '@/assets/icons/star.svg';
-import { twMerge } from 'tailwind-merge';
+import StarIcon from "@/assets/icons/star.svg";
+import { twMerge } from "tailwind-merge";
 
 export const CardHeader = ({title, description, className}: {title: string; description: string; className?: string;}) => {
     return (<div className={twMerge("flex flex-col p-6 md:py-8 md:px-10", className)}>
