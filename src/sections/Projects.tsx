@@ -18,7 +18,7 @@ const portfolioProjects = [
       { title: "Usage of MVC architecture" },
       { title: "Basic AI that evaluates each possible move" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "#",
     image: othelloImage,
   },
   {
@@ -42,7 +42,7 @@ const portfolioProjects = [
       { title: "Utilising OOP that I learnt previously" },
       { title: "Created in pygame, with an encrypted system" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "#",
     image: checkersImage,
   },
 ];

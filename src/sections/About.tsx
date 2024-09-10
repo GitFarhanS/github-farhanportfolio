@@ -1,7 +1,7 @@
 "use client";
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import bookImage from "@/assets/images/book-cover.png";
+import bookImage from "@/assets/images/book.jpg";
 import Image from "next/image";
 import JavasciptIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
@@ -111,8 +111,8 @@ export const AboutSection = () => {
       <div className="mt-20 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
           <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-            <CardHeader title="My Reads" description="Explore the books shaping my perspectives"/>
-            <div className="w-40 mx-auto mt-2 md:mt-0">
+            <CardHeader title="My Reads" description="Discover the books that have influenced my mindset"/>
+            <div className="w-40 mx-auto mt-1 md:-mt-5">
               <Image src={bookImage} alt="Book Cover"/>
             </div>
           </Card>
