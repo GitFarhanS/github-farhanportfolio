@@ -52,7 +52,7 @@ export const WorkExperienceSection = () => {
   return (
     <div className="py-16 lg:py-24">
       <div className="container">
-        <SectionHeader eyebrow="Work Experience" title= "Companies that I have went to"  description=" Here are some key takeaways"/>
+        <SectionHeader eyebrow="Work Experience" title= "Companies I have gained knowledge from"  description=" Here are some key takeaways"/>
           <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,_black_10%,_black_90%,_transparent)] py-4 -my-4">
             <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:60s] hover:[animation-play-state:paused]">
               {[...new Array(2)].fill(0).map((_, index) => (
