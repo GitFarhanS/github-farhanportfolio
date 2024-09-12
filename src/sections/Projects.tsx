@@ -74,6 +74,7 @@ export const ProjectsSection = () => {
                     </li>
                   ))}
               </ul>
+              {project.link && project.link !== "#" && (
               <a href={project.link}>
                 <button className="bg-white text-gray-950 
                 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex 
@@ -82,6 +83,7 @@ export const ProjectsSection = () => {
                   <ArrowUpRightIcon className = "size-4" />
                 </button>
               </a>
+              )}
               </div>
               <div className="relative">
               <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"/>
