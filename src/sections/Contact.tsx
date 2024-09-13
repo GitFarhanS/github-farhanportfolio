@@ -17,7 +17,7 @@ export const ContactSection = () => {
             Contact me for career opportunities and project collaborations.
             </p>
           </div>
-          <div>
+          <div className="z-10">
             <a href="mailto:farhan@farhanshaikh.uk">
               <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
                 <span className="font-semibold">Contact Me</span>
