@@ -1,18 +1,18 @@
 "use client";
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import bookImage from "@/assets/images/book.jpg";
+import bookImage from "@/public/images/book.jpg";
 import Image from "next/image";
-import JavasciptIcon from "@/assets/icons/square-js.svg";
-import HTMLIcon from "@/assets/icons/html5.svg";
-import CSSIcon from "@/assets/icons/css3.svg";
-import ReactIcon from "@/assets/icons/react.svg";
-import JavaIcon from "@/assets/icons/java.svg";
-import GithubIcon from "@/assets/icons/github.svg";
-import pythonIcon from "@/assets/icons/python.svg";
-import haskellIcon from "@/assets/icons/haskell.svg";
-import mapImage from "@/assets/images/nottinghamMap.png";
-import SWEIcon from "@/assets/icons/software-engineer-icon.svg"
+import JavasciptIcon from "@/public/icons/square-js.svg";
+import HTMLIcon from "@/public/icons/html5.svg";
+import CSSIcon from "@/public/icons/css3.svg";
+import ReactIcon from "@/public/icons/react.svg";
+import JavaIcon from "@/public/icons/java.svg";
+import GithubIcon from "@/public/icons/github.svg";
+import pythonIcon from "@/public/icons/python.svg";
+import haskellIcon from "@/public/icons/haskell.svg";
+import mapImage from "@/public/images/nottinghamMap.png";
+import SWEIcon from "@/public/icons/software-engineer-icon.svg"
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion}  from "framer-motion";

@@ -1,18 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import meHero from "@/assets/images/meHero3.png";
-import ArrowDown from "@/assets/icons/arrow-down.svg";
-import grainImage from "@/assets/images/grain.jpg";
+import meHero from "@/public/images/meHero3.png";
+import ArrowDown from "@/public/icons/arrow-down.svg";
+import grainImage from "@/public/images/grain.jpg";
 import { HeroOrbit } from "@/components/HeroOrbit";
-import EarthIcon from "@/assets/icons/planets/earth.svg";
-import MercuryIcon from "@/assets/icons/planets/mercury.svg";
-import VenusIcon from "@/assets/icons/planets/venus.svg";
-import MarsIcon from "@/assets/icons/planets/mars.svg";
-import JupiterIcon from "@/assets/icons/planets/jupiter.svg";
-import SaturnIcon from "@/assets/icons/planets/saturn.svg";
-import UranusIcon from "@/assets/icons/planets/uranus.svg";
-import NeptuneIcon from "@/assets/icons/planets/neptune.svg";
+import EarthIcon from "@/public/icons/planets/earth.svg";
+import MercuryIcon from "@/public/icons/planets/mercury.svg";
+import VenusIcon from "@/public/icons/planets/venus.svg";
+import MarsIcon from "@/public/icons/planets/mars.svg";
+import JupiterIcon from "@/public/icons/planets/jupiter.svg";
+import SaturnIcon from "@/public/icons/planets/saturn.svg";
+import UranusIcon from "@/public/icons/planets/uranus.svg";
+import NeptuneIcon from "@/public/icons/planets/neptune.svg";
 import ScrollLink from "@/components/smoothScroll";
 
 export const HeroSection = () => {

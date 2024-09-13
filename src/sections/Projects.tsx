@@ -1,8 +1,8 @@
-import checkersImage from "@/assets/images/Checkers.png";
-import chatroomImage from "@/assets/images/Chatroom.png";
-import othelloImage from "@/assets/images/Othello.png";
-import CheckIcon from "@/assets/icons/check-circle.svg"
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
+import checkersImage from "@/public/images/Checkers.png";
+import chatroomImage from "@/public/images/Chatroom.png";
+import othelloImage from "@/public/images/Othello.png";
+import CheckIcon from "@/public/icons/check-circle.svg"
+import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";

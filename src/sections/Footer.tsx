@@ -1,21 +1,21 @@
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg";
 
 const footerlinks = [
-  {
-    title: "YouTube",
-    href: "#",
-  },
-  {
-    title: "Twitter",
-    href: "#",
-  },
-  {
-    title: "Instagram",
-    href: "#",
-  },
+  // {
+  //   title: "YouTube",
+  //   href: "#",
+  // },
+  // {
+  //   title: "Twitter",
+  //   href: "#",
+  // },
+  // {
+  //   title: "Instagram",
+  //   href: "#",
+  // },
   {
     title: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/farhanshaikh18/",
   },
 ];
 
@@ -29,7 +29,7 @@ export const Footer = () => {
         <div className="text-white/40">&copy; 2024. All rights reserved.</div>
         <nav className="flex flex-col md:flex-row items-center gap-8">
           {footerlinks.map(link => (
-            <a href="#" key={link.title} className="inline-flex items-center gap-1.5">
+            <a href={link.href} key={link.title} className="inline-flex items-center gap-1.5">
               <span className="font-semibold">{link.title}</span>
               <ArrowUpRightIcon className="size-4"/>
             </a>

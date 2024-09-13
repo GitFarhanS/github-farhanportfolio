@@ -1,4 +1,4 @@
-import StarIcon from "@/assets/icons/star.svg";
+import StarIcon from "@/public/icons/star.svg";
 import { twMerge } from "tailwind-merge";
 
 export const CardHeader = ({title, description, className}: {title: string; description: string; className?: string;}) => {

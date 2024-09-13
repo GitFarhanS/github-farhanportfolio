@@ -1,9 +1,9 @@
-import google from "@/assets/images/google_logo.png";
-import level2 from "@/assets/images/level2.png";
-import aviva from "@/assets/images/aviva.png";
-import baird from "@/assets/images/baird.png";
-import hsbc from "@/assets/images/hsbc.png";
-import insight from "@/assets/images/insightifa.png";
+import google from "@/public/images/google_logo.png";
+import level2 from "@/public/images/level2.png";
+import aviva from "@/public/images/aviva.png";
+import baird from "@/public/images/baird.png";
+import hsbc from "@/public/images/hsbc.png";
+import insight from "@/public/images/insightifa.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import {Card} from "@/components/Card"
