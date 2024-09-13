@@ -17,7 +17,7 @@ export const Header = () => {
           Projects
         </ScrollLink>
         <ScrollLink sectionId="workExperience" as="button" className={`nav-item ${currentSection === "workExperience" ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900" : "hover:bg-white/10"}`}>
-          Work Exp
+          Work
         </ScrollLink>
         <ScrollLink sectionId="about" as="button" className={`nav-item ${currentSection === "about" ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900" : "hover:bg-white/10"}`}>
           About

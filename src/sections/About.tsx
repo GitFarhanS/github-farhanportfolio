@@ -107,7 +107,7 @@ export const AboutSection = () => {
   return  (
   <div className="py-20 lg:py-28">
     <div className="container">
-      <SectionHeader eyebrow="About Me" title="A look into my world" description="Learn more about who I am, what I do and what inspires me"/>
+      <SectionHeader eyebrow="About Me" title="Step into my world" description="Discover who I am, what I do, and what fuels my creativity"/>
       <div className="mt-20 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
           <Card className="h-[320px] md:col-span-2 lg:col-span-1">
@@ -117,7 +117,7 @@ export const AboutSection = () => {
             </div>
           </Card>
           <Card className="h-[320px] md:col-span-3 lg:col-span-2">
-            <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to craft exception digital experiences." className=""/>
+            <CardHeader title="My Toolbox" description="Explore the technologies and tools I learnt in my own time and from University." className=""/>
             <ToolboxItems items={toolbox} className="" itemsWrapperClassname="animate-move-left [animation-duration:30s]"/>
             <ToolboxItems items={toolbox} className="mt-6" itemsWrapperClassname= "animate-move-right [animation-duration:15s]"/>
           </Card>
