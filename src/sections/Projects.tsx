@@ -51,15 +51,15 @@ export const ProjectsSection = () => {
   return (
   <section className="pb-16 lg:py-24" id="projects">
     <div className="container">
-    <SectionHeader eyebrow="Real-world results" title= "Featured Projects"  description="Discover how I turned basic ideas into captivating digital solutions"></SectionHeader>
+    <SectionHeader eyebrow="Real-world results" title= "Featured Projects"  description=" Discover how I turned basic ideas into captivating digital solutions"></SectionHeader>
       <div className=" flex flex-col mt-10 md:mt-20 gap-20">
         {portfolioProjects.map((project, projectIndex) => (
           <Card key={project.title} className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky" style={{top: `calc(64px + ${projectIndex * 40}px)`}}>
             <div className="lg:grid lg:grid-cols-2 lg:gap-16">
               <div className="lg:pb-16">
-              <div className="bg-gradient-to-r from-emerald-300 to-sky-400 
-              inline-flex gap-2 font-bold uppercase tracking-widest 
-              text-sm text-transparent bg-clip-text">
+                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 
+                inline-flex gap-2 font-bold uppercase tracking-widest 
+                text-sm text-transparent bg-clip-text">
                 <span>{project.company}</span>
                 <span>&bull;</span>
                 <span>{project.year}</span>
@@ -74,17 +74,19 @@ export const ProjectsSection = () => {
                     </li>
                   ))}
               </ul>
-              {project.link && project.link !== "#" && (
-              <a href={project.link}>
-                <button className="bg-white text-gray-950 
-                h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex 
-                items-center justify-center gap-2 mt-8">
-                  <span>Visit Live Site</span>
-                  <ArrowUpRightIcon className = "size-4" />
-                </button>
-              </a>
-              )}
-              </div>
+              {project.link && project.link !== "#" ? (
+                <a href={project.link}>
+                  <button className="bg-white text-gray-950 
+                      h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex 
+                      items-center justify-center gap-2 mt-8">
+                    <span>Visit Live Site</span>
+                    <ArrowUpRightIcon className="size-4" />
+                  </button>
+                  </a>
+                ) : (
+                  <div className="invisible h-12 w-full md:w-auto px-8 mt-8"></div>
+                )}
+                </div>
               <div className="relative">
               <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"/>
               </div>
