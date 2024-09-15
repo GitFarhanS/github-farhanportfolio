@@ -17,6 +17,10 @@ const footerlinks = [
     title: "LinkedIn",
     href: "https://www.linkedin.com/in/farhanshaikh18/",
   },
+  {
+    title: "GitHub",
+    href: "github.com/GitFarhanS",
+  },
 ];
 
 export const Footer = () => {
