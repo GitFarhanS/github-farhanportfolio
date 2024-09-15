@@ -11,7 +11,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "An expansion from Farhan's CV",
+  description: "An expansion of Farhan&apos;s CV",
 };
 
 export default function RootLayout({
