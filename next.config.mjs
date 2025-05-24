@@ -2,8 +2,7 @@
 const nextConfig = {
   // output: 'export',
   images: {
-    loader: "custom",
-    loaderFile: './ImageLoader.js'
+    unoptimized: true
   },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
