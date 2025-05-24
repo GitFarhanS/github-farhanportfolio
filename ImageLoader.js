@@ -1,3 +1,3 @@
 export default function ImageLoader({ src }) {
-    return src;
+    return `/github-farhanportfolio${src}`;
 }

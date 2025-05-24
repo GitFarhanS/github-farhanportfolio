@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: 'export',
+  basePath: '/github-farhanportfolio',
   images: {
     unoptimized: true
   },
