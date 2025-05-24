@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/ftlogo.png" type="image/png" />
+        <link rel="icon" href="@/public/ftlogo.png" type="image/png" />
       </head>
       <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>{children}</body>
     </html>
