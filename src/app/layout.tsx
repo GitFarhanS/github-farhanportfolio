@@ -12,6 +12,11 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "My Portfolio",
   description: "An expansion on my CV",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -21,9 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="@/public/ftlogo.png" type="image/png" />
-      </head>
       <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>{children}</body>
     </html>
   );
