@@ -4,6 +4,7 @@ import aviva from "@/public/images/aviva.png";
 import baird from "@/public/images/baird.png";
 import hsbc from "@/public/images/hsbc.png";
 import insight from "@/public/images/insightifa.png";
+import bofa from "@/public/images/bofa.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import {Card} from "@/components/Card"
@@ -46,6 +47,12 @@ const testimonials = [
     text: "Analysed client data to create tailored reports. Created an SQL algorithm in Navicat to eliminate redundant cold leads. Assisted in archiving wills and streamlining SQL data.",
     avatar: insight,
   },
+  {
+    name: "Bank of America",
+    position: "2025 - Global Technology Spring Internship",
+    text: "I got selected for Bank of America's Global Technology Spring Week, where I got an inside look at how tech drives innovation in finance. It was an incredible opportunity to learn from experts, participate in workshops, and connect with like-minded peers.",
+    avatar: bofa,
+  }
 ];
 
 export const WorkExperienceSection = () => {
