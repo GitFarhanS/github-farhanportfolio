@@ -5,6 +5,7 @@ import baird from "@/public/images/baird.png";
 import hsbc from "@/public/images/hsbc.png";
 import insight from "@/public/images/insightifa.png";
 import bofa from "@/public/images/bofa.png";
+import lmax from "@/public/images/lmax.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import {Card} from "@/components/Card"
@@ -52,6 +53,12 @@ const testimonials = [
     position: "2025 - Global Technology Spring Internship",
     text: "I got selected for Bank of America's Global Technology Spring Week, where I got an inside look at how tech drives innovation in finance. It was an incredible opportunity to learn from experts, participate in workshops, and connect with like-minded peers.",
     avatar: bofa,
+  },
+  {
+    name: "LMAX",
+    position: "2024/25 university project",
+    text: "I worked on a university project with LMAX as a team leader of 8, where we built a client statement generator webapp using Python and the LMAX API. I learned about the different types of orders and how to use the API to execute trades. I also learned about the different types of markets and how to use the API to get market data.",
+    avatar: lmax,
   }
 ];
 
