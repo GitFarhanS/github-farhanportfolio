@@ -1,7 +1,9 @@
 import checkersImage from "@/public/images/Checkers.png";
-import chatroomImage from "@/public/images/Chatroom.png";
+import lmaxImage from "@/public/images/lmaxImage.png";
 import othelloImage from "@/public/images/Othello.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
+import norwichOperationsImage from "@/public/images/norwichoperations.png";
+import chatroomImage from "@/public/images/Chatroom.png";
 import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -9,6 +11,31 @@ import { Card } from "@/components/Card";
 
 
 const portfolioProjects = [
+  {
+    company: "University Partnership Project with LMAX",
+    year: "2025",
+    title: "Trading Statement Generator",
+    results: [
+      { title: "Led a team of 8, using Agile and Scrum methodologies" },
+      { title: "Created and algorithm around LMAX's API to generate trading statements" },
+      { title: "Auth0 for authentication and user management" },
+      { title: "Flask Backend, Docker to containerise the application" },
+    ],
+    link: "#",
+    image: lmaxImage,
+  },
+  {
+    company: "Norwich Operations",
+    year: "2025",
+    title: "Norwich Operations Webpage",
+    results: [
+      { title: "Using new skills learnt from university" },
+      { title: "React, framer motion, tailwind css" }, 
+      { title: "Cheerio to scrape data from the website, and OpenCV to detect faces" },
+    ],
+    link: "https://norwichoperations.com/",
+    image: norwichOperationsImage,
+  },
   {
     company: "University Project",
     year: "2024",
@@ -22,13 +49,13 @@ const portfolioProjects = [
     image: othelloImage,
   },
   {
-    company: "Personal",
+    company: "Personal Project",
     year: "2024",
     title: "Chatroom using Supabase",
     results: [
-      { title: "Using new skills learnt from university" },
-      { title: "JavaScript and Supabase backend" },
+      { title: "JavaScript and Supabase backend" }, 
       { title: "HTML5 and CSS3 frontend, JS and SQL with hashing backend" },
+      { title: "Used Supabase for authentication and user management" },
     ],
     link: "https://gitfarhans.github.io/chatroom/",
     image: chatroomImage,
