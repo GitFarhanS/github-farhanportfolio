@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
         <div className="max-w-lg mx-auto text-center mt-8">
           <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide">
-            Analytical mind creative coding
+            Analytical Creative Coding
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
           I am interested in programming and statistics for the use case of artificial intelligence. I enjoy exploring creative approaches to solving a recurring problem.
