@@ -4,6 +4,7 @@ import othelloImage from "@/public/images/Othello.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
 import norwichOperationsImage from "@/public/images/norwichoperations.png";
 import chatroomImage from "@/public/images/Chatroom.png";
+import farhanTeachesImage from "@/public/images/farhanTeaches.png";
 import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -23,6 +24,18 @@ const portfolioProjects = [
     ],
     link: "#",
     image: lmaxImage,
+  },
+  {
+    company: "Farhan Teaches",
+    year: "2025",
+    title: "My Tutoring Website",
+    results: [
+      { title: "Created a website for my tutoring business" },
+      { title: "React + Vite, Tailwind CSS, GitHub Pages + Ionos Hosting" },
+      { title: "EmailJS for contact form" },
+    ],
+    link: "https://farhanteaches.co.uk",
+    image: farhanTeachesImage,
   },
   {
     company: "Norwich Operations",
