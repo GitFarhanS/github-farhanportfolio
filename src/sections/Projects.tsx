@@ -1,5 +1,7 @@
 import checkersImage from "@/public/images/Checkers.png";
 import lmaxImage from "@/public/images/lmaxImage.png";
+import gridImage from "@/public/images/GRID-image-portfolio.jpg";
+import styleSwipeImage from "@/public/images/Style-swipe-portfolio.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
 import norwichOperationsImage from "@/public/images/norwichoperations.png";
 import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
@@ -9,6 +11,30 @@ import { Card } from "@/components/Card";
 
 
 const portfolioProjects = [
+  {
+    company: "HackLondon",
+    year: "2026",
+    title: "GRID",
+    results: [
+      { title: "Societies Track winner — geospatial simulator for substation stress, DC and wind-farm placement, and sustainability-focused viability reporting" },
+      { title: "CesiumJS 3D visualization and scenario tooling; Python/Flask backend; 7-day metrics and PDF report generation" },
+      { title: "Real data ingestion, renewable offset modeling, and evidence-backed outputs aligned with National Grid–style planning questions" },
+    ],
+    link: "https://devpost.com/software/grid-38zo0l",
+    image: gridImage,
+  },
+  {
+    company: "HackSheffield",
+    year: "2025",
+    title: "Style Swipe",
+    results: [
+      { title: "MLH Best Use of Gemini API and Frasers Group winner — AI virtual try-on from front/side/back photos with Tinder-style swiping through matched UK retail products" },
+      { title: "FastAPI, PostgreSQL, and SQLAlchemy; SerpApi Google Shopping; Gemini for composite 9:16 try-on renders and preference-driven search" },
+      { title: "Results and analytics in-app plus Grafana dashboards for engagement, clicks, and conversion-style funnels" },
+    ],
+    link: "https://devpost.com/software/style-swipe-7h2zak",
+    image: styleSwipeImage,
+  },
   {
     company: "University Partnership Project with LMAX",
     year: "2025",
@@ -33,19 +59,7 @@ const portfolioProjects = [
     ],
     link: "https://norwichoperations.com/",
     image: norwichOperationsImage,
-  },
-  {
-    company: "HackNotts",
-    year: "2023",
-    title: "Minimax \"AI\" checkers",
-    results: [
-      { title: "Completed this in a timed hackathon project" },
-      { title: "Utilising OOP that I learnt previously" },
-      { title: "Created in pygame, with an encrypted system" },
-    ],
-    link: "#",
-    image: checkersImage,
-  },
+  }
 ];
 
 export const ProjectsSection = () => {
