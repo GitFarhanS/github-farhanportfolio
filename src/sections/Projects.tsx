@@ -3,7 +3,6 @@ import lmaxImage from "@/public/images/lmaxImage.png";
 import gridImage from "@/public/images/GRID-portfolio-new-img.png";
 import styleSwipeImage from "@/public/images/Style-swipe-portfolio.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
-import norwichOperationsImage from "@/public/images/norwichoperations.png";
 import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -47,18 +46,6 @@ const portfolioProjects = [
     ],
     link: "#",
     image: lmaxImage,
-  },
-  {
-    company: "Norwich Operations",
-    year: "2025",
-    title: "Norwich Operations Webpage",
-    results: [
-      { title: "Using new skills learnt from university" },
-      { title: "React, framer motion, tailwind css" }, 
-      { title: "Cheerio to scrape data from the website, and OpenCV to detect faces" },
-    ],
-    link: "https://norwichoperations.com/",
-    image: norwichOperationsImage,
   }
 ];
 

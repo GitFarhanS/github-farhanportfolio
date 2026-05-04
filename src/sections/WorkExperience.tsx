@@ -10,7 +10,7 @@ import { Fragment } from "react";
 const testimonials = [
   {
     name: "Aviva",
-    position: "2022 - Summer Work Wxperience",
+    position: "2022 - Summer Work Experience",
     text: "Gained expertise in Amazon Web Services and Google Cloud, including their use for modeling cloud infrastructure and architecture. Acquired experience in presenting Internet of Things projects and working with database technologies, as well as understanding NetZero concepts within these platforms.",
     avatar: aviva,
   },
