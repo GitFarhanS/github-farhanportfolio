@@ -1,9 +1,5 @@
-import google from "@/public/images/google_logo.png";
-import level2 from "@/public/images/level2.png";
 import aviva from "@/public/images/aviva.png";
-import baird from "@/public/images/baird.png";
 import hsbc from "@/public/images/hsbc.png";
-import insight from "@/public/images/insightifa.png";
 import bofa from "@/public/images/bofa.png";
 import lmax from "@/public/images/lmax.png";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -13,40 +9,16 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Google",
-    position: "2024 - Google X SEOLondon Insight day",
-    text: "I gained valuable insights into technical careers at Google through discussions with their experienced employees. My group collaborated on challenging technical assessments, enhancing our problem-solving skills.",
-    avatar: google,
-  },
-  {
-    name: "Level2",
-    position: "2024 - Quantitative Trader Internship",
-    text: "I learned about trading strategies using the Strategy Builder, applied technical indicators for signals, and tested it with the Backtesting Module. After optimising for better returns, I simulated it with paper trading before deploying it with real funds, continuously monitoring and adjusting as needed.",
-    avatar: level2,
-  },
-  {
     name: "Aviva",
     position: "2022 - Summer Work Wxperience",
     text: "Gained expertise in Amazon Web Services and Google Cloud, including their use for modeling cloud infrastructure and architecture. Acquired experience in presenting Internet of Things projects and working with database technologies, as well as understanding NetZero concepts within these platforms.",
     avatar: aviva,
   },
   {
-    name: "Robert W. Baird & Co",
-    position: "2022 - Equities Open day",
-    text: "I’ve learned from Robert W. Baird what equities are, focusing on mergers and acquisitions and private equity. Includes analysing market trends to identify investment opportunities. This insight has deepened my understanding of how financial markets and strategic investments intersect.",
-    avatar: baird,
-  },
-  {
     name: "HSBC",
     position: "2021 - Virtual Work Experience",
     text: "Core understanding of wealth and personal banking, investment banking, and global trade solutions. They focus on areas like marketing, receivable finance, and fraud detection to support their clients. This has given me a broader view of how HSBC operates across different financial sectors",
     avatar: hsbc,
-  },
-  {
-    name: "InsightIFA",
-    position: "2023 - Financial Advisor PA Work Experience",
-    text: "Analysed client data to create tailored reports. Created an SQL algorithm in Navicat to eliminate redundant cold leads. Assisted in archiving wills and streamlining SQL data.",
-    avatar: insight,
   },
   {
     name: "Bank of America",

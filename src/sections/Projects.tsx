@@ -1,10 +1,7 @@
 import checkersImage from "@/public/images/Checkers.png";
 import lmaxImage from "@/public/images/lmaxImage.png";
-import othelloImage from "@/public/images/Othello.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
 import norwichOperationsImage from "@/public/images/norwichoperations.png";
-import chatroomImage from "@/public/images/Chatroom.png";
-import farhanTeachesImage from "@/public/images/farhanTeaches.png";
 import ArrowUpRightIcon from "@/public/icons/arrow-up-right.svg"
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -26,18 +23,6 @@ const portfolioProjects = [
     image: lmaxImage,
   },
   {
-    company: "Farhan Teaches",
-    year: "2025",
-    title: "My Tutoring Website",
-    results: [
-      { title: "Created a website for my tutoring business" },
-      { title: "React + Vite, Tailwind CSS, GitHub Pages + Ionos Hosting" },
-      { title: "EmailJS for contact form" },
-    ],
-    link: "https://farhanteaches.co.uk",
-    image: farhanTeachesImage,
-  },
-  {
     company: "Norwich Operations",
     year: "2025",
     title: "Norwich Operations Webpage",
@@ -48,30 +33,6 @@ const portfolioProjects = [
     ],
     link: "https://norwichoperations.com/",
     image: norwichOperationsImage,
-  },
-  {
-    company: "University Project",
-    year: "2024",
-    title: "Minimax \"AI\" Othello",
-    results: [
-      { title: "100% in all individual Java Projects at university" },
-      { title: "Usage of MVC architecture" },
-      { title: "Basic AI that evaluates each possible move" },
-    ],
-    link: "#",
-    image: othelloImage,
-  },
-  {
-    company: "Personal Project",
-    year: "2024",
-    title: "Chatroom using Supabase",
-    results: [
-      { title: "JavaScript and Supabase backend" }, 
-      { title: "HTML5 and CSS3 frontend, JS and SQL with hashing backend" },
-      { title: "Used Supabase for authentication and user management" },
-    ],
-    link: "https://gitfarhans.github.io/chatroom/",
-    image: chatroomImage,
   },
   {
     company: "HackNotts",
