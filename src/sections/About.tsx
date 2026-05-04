@@ -11,8 +11,6 @@ import JavaIcon from "@/public/icons/java.svg";
 import GithubIcon from "@/public/icons/github.svg";
 import pythonIcon from "@/public/icons/python.svg";
 import haskellIcon from "@/public/icons/haskell.svg";
-import mapImage from "@/public/images/nottinghamMap.png";
-import SWEIcon from "@/public/icons/software-engineer-icon.svg"
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion}  from "framer-motion";
@@ -110,22 +108,17 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-            <Image src={mapImage} alt="map" className="h-full w-full object-cover object-left-top"/>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30 scale-75">
-              <div className="absolute inset-0 rounded-full  bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-              <div className="absolute inset-0 rounded-full  bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 "></div>
-              <SWEIcon className="absolute size-14 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" fill="url(#map-icon-gradient)" />
-              <svg className="size-0 absolute">
-                <defs>
-                  <linearGradient id="map-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="rgb(235,209,151)" />
-                    <stop offset="33%" stopColor="rgb(180,136,17)" />
-                    <stop offset="66%" stopColor="rgb(162,121,13)" />
-                    <stop offset="100%" stopColor="rgb(187,155,73)" />
-                  </linearGradient>
-                </defs>
-              </svg>
+          <Card className="p-0 overflow-hidden md:col-span-2 lg:col-span-1 flex justify-center bg-gray-950">
+            <div className="w-full overflow-x-auto flex justify-center py-3 md:py-4">
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7453874427370369024?collapsed=1"
+                height={670}
+                width={504}
+                className="max-w-full border-0 shrink-0"
+                title="Embedded LinkedIn post"
+                allowFullScreen
+                frameBorder={0}
+              />
             </div>
           </Card>
         </div>
