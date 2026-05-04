@@ -59,16 +59,9 @@ export const HeroSection = () => {
 
       {/* Foreground Content */}
       <div className="container relative z-10">
-        <div className="flex flex-col items-center">
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-red-500 size-2.5 rounded-full shrink-0" aria-hidden />
-            <div className="text-sm font-medium">Programming & AI</div>
-          </div>
-        </div>
-
-        <div className="max-w-lg mx-auto text-center mt-8">
+        <div className="max-w-lg mx-auto text-center">
           <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide">
-            Research Oriented Student
+            Farhan Shaikh
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
           I am interested in programming and statistics for the use case of artificial intelligence. I enjoy exploring creative approaches to solving a recurring problem.

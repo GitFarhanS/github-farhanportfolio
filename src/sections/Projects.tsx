@@ -1,6 +1,6 @@
 import checkersImage from "@/public/images/Checkers.png";
 import lmaxImage from "@/public/images/lmaxImage.png";
-import gridImage from "@/public/images/GRID-image-portfolio.jpg";
+import gridImage from "@/public/images/GRID-portfolio-new-img.png";
 import styleSwipeImage from "@/public/images/Style-swipe-portfolio.png";
 import CheckIcon from "@/public/icons/check-circle.svg"
 import norwichOperationsImage from "@/public/images/norwichoperations.png";
