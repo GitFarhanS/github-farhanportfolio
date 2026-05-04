@@ -90,17 +90,24 @@ export const ProjectsSection = () => {
                   <div className="invisible h-12 w-full md:w-auto px-8 mt-8"></div>
                 )}
                 </div>
-              <div className="relative">
-              <Image
-                src={project.image}
-                alt={project.title}
+              <div
                 className={
-                  "mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none " +
+                  "relative min-h-0 " +
                   ("imageAlign" in project && project.imageAlign === "right"
-                    ? "ml-auto lg:left-auto lg:right-0"
+                    ? "-mr-8 md:-mr-10 lg:mr-0 lg:h-full lg:w-full"
                     : "")
                 }
-              />
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className={
+                    "mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none " +
+                    ("imageAlign" in project && project.imageAlign === "right"
+                      ? "ml-auto lg:left-auto lg:[right:-5rem]"
+                      : "")
+                  }
+                />
               </div>
             </div>
           </Card>

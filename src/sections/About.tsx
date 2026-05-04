@@ -102,7 +102,7 @@ export const AboutSection = () => {
   return  (
   <div className="py-20 lg:py-28">
     <div className="container">
-      <SectionHeader eyebrow="About Me" title="Step into my world" description="Discover who I am, what I do, and what fuels my creativity"/>
+      <SectionHeader eyebrow="About Me" title="Additional Information" description="Discover who I am, what I do, and what fuels my creativity"/>
       <div className="mt-20 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
           <Card className="h-[320px] md:col-span-2 lg:col-span-1">
