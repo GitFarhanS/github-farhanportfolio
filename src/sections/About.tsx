@@ -53,26 +53,26 @@ const hobbies =[
   {
     title: "3D modelling",
     emoji: "📐",
-    left: "5%",
-    top: "5%",
+    left: "6%",
+    top: "12%",
   },
   {
     title: "Hiking",
     emoji: "🥾",
-    left: "35%",
-    top: "40%",
+    left: "68%",
+    top: "68%",
   },
   {
     title: "Gaming",
     emoji: "🎮",
-    left: "10%",
-    top: "35%",
+    left: "72%",
+    top: "14%",
   },
   {
     title: "Fitness",
     emoji: "💪",
-    left: "5%",
-    top: "65%",
+    left: "8%",
+    top: "72%",
   }
 ]
 
@@ -108,13 +108,20 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card className="p-0 overflow-hidden md:col-span-2 lg:col-span-1 flex justify-center bg-gray-950">
-            <div className="w-full overflow-x-auto flex justify-center py-3 md:py-4">
+          <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1 flex justify-center items-start bg-gray-950">
+            <div
+              className="shrink-0 origin-top"
+              style={{
+                width: 504,
+                height: 670,
+                transform: `scale(${320 / 670})`,
+              }}
+            >
               <iframe
                 src="https://www.linkedin.com/embed/feed/update/urn:li:share:7453874427370369024?collapsed=1"
                 height={670}
                 width={504}
-                className="max-w-full border-0 shrink-0"
+                className="block border-0"
                 title="Embedded LinkedIn post"
                 allowFullScreen
                 frameBorder={0}
