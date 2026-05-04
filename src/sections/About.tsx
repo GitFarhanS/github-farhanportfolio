@@ -14,7 +14,10 @@ import haskellIcon from "@/public/icons/haskell.svg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion}  from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const LINKEDIN_EMBED_W = 504;
+const LINKEDIN_EMBED_H = 670;
 
 const toolbox = [
   {
@@ -78,6 +81,24 @@ const hobbies =[
 
 export const AboutSection = () => {
   const constraintRef = useRef(null);
+  const linkedInHostRef = useRef<HTMLDivElement>(null);
+  const [linkedInScale, setLinkedInScale] = useState(320 / LINKEDIN_EMBED_H);
+
+  useEffect(() => {
+    const el = linkedInHostRef.current;
+    if (!el) return;
+    const update = () => {
+      const w = el.clientWidth;
+      const h = el.clientHeight;
+      if (w < 1 || h < 1) return;
+      setLinkedInScale(Math.max(w / LINKEDIN_EMBED_W, h / LINKEDIN_EMBED_H));
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   return  (
   <div className="py-20 lg:py-28">
     <div className="container">
@@ -108,24 +129,31 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1 flex justify-center items-start bg-gray-950">
+          <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1 bg-gray-950">
             <div
-              className="shrink-0 origin-top"
-              style={{
-                width: 504,
-                height: 670,
-                transform: `scale(${320 / 670})`,
-              }}
+              ref={linkedInHostRef}
+              className="relative h-full w-full overflow-hidden"
             >
-              <iframe
-                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7453874427370369024?collapsed=1"
-                height={670}
-                width={504}
-                className="block border-0"
-                title="Embedded LinkedIn post"
-                allowFullScreen
-                frameBorder={0}
-              />
+              <div className="absolute left-1/2 top-0 -translate-x-1/2">
+                <div
+                  className="origin-top"
+                  style={{
+                    width: LINKEDIN_EMBED_W,
+                    height: LINKEDIN_EMBED_H,
+                    transform: `scale(${linkedInScale})`,
+                  }}
+                >
+                  <iframe
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:share:7453874427370369024?collapsed=1"
+                    height={LINKEDIN_EMBED_H}
+                    width={LINKEDIN_EMBED_W}
+                    className="block border-0"
+                    title="Embedded LinkedIn post"
+                    allowFullScreen
+                    frameBorder={0}
+                  />
+                </div>
+              </div>
             </div>
           </Card>
         </div>

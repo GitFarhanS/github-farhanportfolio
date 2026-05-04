@@ -33,6 +33,7 @@ const portfolioProjects = [
     ],
     link: "https://devpost.com/software/style-swipe-7h2zak",
     image: styleSwipeImage,
+    imageAlign: "right" as const,
   },
   {
     company: "University Partnership Project with LMAX",
@@ -90,7 +91,16 @@ export const ProjectsSection = () => {
                 )}
                 </div>
               <div className="relative">
-              <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"/>
+              <Image
+                src={project.image}
+                alt={project.title}
+                className={
+                  "mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none " +
+                  ("imageAlign" in project && project.imageAlign === "right"
+                    ? "ml-auto lg:left-auto lg:right-0"
+                    : "")
+                }
+              />
               </div>
             </div>
           </Card>
