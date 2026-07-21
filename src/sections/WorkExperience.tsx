@@ -17,9 +17,9 @@ const testimonials = [
     avatar: google,
   },
   {
-    name: "Level2",
-    position: "2024 - Quantitative Trader Internship",
-    text: "I learned about trading strategies using the Strategy Builder, applied technical indicators for signals, and tested it with the Backtesting Module. After optimising for better returns, I simulated it with paper trading before deploying it with real funds, continuously monitoring and adjusting as needed.",
+    name: "Qube Research and Technologies",
+    position: "2024 - Quant Tech Analyst",
+    text: "I work as a quant tech analyst.",
     avatar: level2,
   },
   {
